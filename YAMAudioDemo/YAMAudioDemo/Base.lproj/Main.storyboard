@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YAMAudioDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-mU-vMP">
+                                <rect key="frame" x="162" y="194" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.49830293623133887" green="0.60428785864038048" blue="0.70268876903553301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="17H-aZ-DOP"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZyN-gh-hoz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="record"/>
+                                <connections>
+                                    <action selector="touchBegin:" destination="BYZ-38-t0r" eventType="touchDown" id="kJT-ST-siI"/>
+                                    <action selector="touchEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edx-Jf-PGv"/>
+                                    <action selector="touchOut:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="fCr-K8-DTY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lv1-Ho-yBU">
+                                <rect key="frame" x="0.0" y="418" width="375" height="400"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.81391802226027399" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="vvv-rl-Ae0"/>
+                                </constraints>
+                                <color key="textColor" red="0.23137254901960785" green="0.9882352941176471" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0b-B5-2nk">
+                                <rect key="frame" x="299" y="418" width="66" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="重新连接">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reopen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LsK-03-cTV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lv1-Ho-yBU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="40" id="2jJ-fw-Lx2"/>
+                            <constraint firstItem="Fvf-mU-vMP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VSR-S7-CI2"/>
+                            <constraint firstItem="Fvf-mU-vMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="e32-Bs-7KD"/>
+                            <constraint firstItem="Lv1-Ho-yBU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g6q-9O-pIl"/>
+                            <constraint firstItem="Lv1-Ho-yBU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p9Q-0Y-KSt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="consoleView" destination="Lv1-Ho-yBU" id="D7b-4y-u66"/>
+                        <outlet property="recorderBtn" destination="Fvf-mU-vMP" id="c5v-G8-Iz1"/>
+                        <outlet property="reopenBtn" destination="M0b-B5-2nk" id="wHy-rK-FAV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="record" width="50" height="50"/>
+    </resources>
+</document>

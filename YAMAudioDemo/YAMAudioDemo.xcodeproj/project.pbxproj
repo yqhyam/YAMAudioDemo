@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5EE2198C037182CE2B4DFFD /* Pods_YAMAudioDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9525BE209EBA9C1E5F48412F /* Pods_YAMAudioDemo.framework */; };
+		E834D9B3207DE59F00030202 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834D9B2207DE59F00030202 /* AudioController.swift */; };
+		E8648287594C7337B9533235 /* Pods_YAMAudioDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B90DD0E96C10ADF476EA99 /* Pods_YAMAudioDemoUITests.framework */; };
+		E86CD74F207B45CC00D186D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD74E207B45CC00D186D6 /* AppDelegate.swift */; };
+		E86CD751207B45CC00D186D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD750207B45CC00D186D6 /* ViewController.swift */; };
+		E86CD754207B45CC00D186D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86CD752207B45CC00D186D6 /* Main.storyboard */; };
+		E86CD756207B45D500D186D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86CD755207B45D500D186D6 /* Assets.xcassets */; };
+		E86CD759207B45D500D186D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86CD757207B45D500D186D6 /* LaunchScreen.storyboard */; };
+		E86CD764207B45D500D186D6 /* YAMAudioDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD763207B45D500D186D6 /* YAMAudioDemoTests.swift */; };
+		E86CD76F207B45D500D186D6 /* YAMAudioDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD76E207B45D500D186D6 /* YAMAudioDemoUITests.swift */; };
+		E86CD77F207B4A2C00D186D6 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD77D207B4A2C00D186D6 /* Recorder.swift */; };
+		E86CD780207B4A2C00D186D6 /* YAMOpenALPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD77E207B4A2C00D186D6 /* YAMOpenALPlay.swift */; };
+		E873A7B8207EEF2F00D0FBE5 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E873A7B7207EEF2F00D0FBE5 /* libopus.a */; };
+		E873A7BA207EEF4B00D0FBE5 /* YAMOpusCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E873A7B9207EEF4B00D0FBE5 /* YAMOpusCodec.swift */; };
+		E8A1FF22207DA8F100B51E6E /* YAMAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A1FF21207DA8F100B51E6E /* YAMAudioUnit.swift */; };
+		E8FD663A207B5B72000B6934 /* YAMAudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FD6639207B5B72000B6934 /* YAMAudioRecord.swift */; };
+		E8FD663C207B641D000B6934 /* YAMVolCricleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FD663B207B641D000B6934 /* YAMVolCricleLayer.swift */; };
+		F60199A8531B2EF6FF3D0013 /* Pods_YAMAudioDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EF6E7161A3387A223CCEA1 /* Pods_YAMAudioDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E86CD760207B45D500D186D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E86CD743207B45CC00D186D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E86CD74A207B45CC00D186D6;
+			remoteInfo = YAMAudioDemo;
+		};
+		E86CD76B207B45D500D186D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E86CD743207B45CC00D186D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E86CD74A207B45CC00D186D6;
+			remoteInfo = YAMAudioDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15B90DD0E96C10ADF476EA99 /* Pods_YAMAudioDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YAMAudioDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		442ACEF255EC071904C53961 /* Pods-YAMAudioDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAMAudioDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAMAudioDemoTests/Pods-YAMAudioDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4569315BBEEC8DEA5DB6819D /* Pods-YAMAudioDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAMAudioDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAMAudioDemoUITests/Pods-YAMAudioDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F484183E220C69C6CB10564 /* Pods-YAMAudioDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAMAudioDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAMAudioDemo/Pods-YAMAudioDemo.release.xcconfig"; sourceTree = "<group>"; };
+		85FCFD25203E8528ECD935AB /* Pods-YAMAudioDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAMAudioDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAMAudioDemo/Pods-YAMAudioDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9525BE209EBA9C1E5F48412F /* Pods_YAMAudioDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YAMAudioDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F777440119E91014C664C8 /* Pods-YAMAudioDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAMAudioDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAMAudioDemoUITests/Pods-YAMAudioDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E834D9B2207DE59F00030202 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		E86CD74B207B45CC00D186D6 /* YAMAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAMAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86CD74E207B45CC00D186D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E86CD750207B45CC00D186D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E86CD753207B45CC00D186D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E86CD755207B45D500D186D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E86CD758207B45D500D186D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E86CD75A207B45D500D186D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86CD75F207B45D500D186D6 /* YAMAudioDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAMAudioDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86CD763207B45D500D186D6 /* YAMAudioDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMAudioDemoTests.swift; sourceTree = "<group>"; };
+		E86CD765207B45D500D186D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86CD76A207B45D500D186D6 /* YAMAudioDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAMAudioDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86CD76E207B45D500D186D6 /* YAMAudioDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMAudioDemoUITests.swift; sourceTree = "<group>"; };
+		E86CD770207B45D500D186D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86CD77D207B4A2C00D186D6 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		E86CD77E207B4A2C00D186D6 /* YAMOpenALPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMOpenALPlay.swift; sourceTree = "<group>"; };
+		E873A7B2207EEF2F00D0FBE5 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		E873A7B3207EEF2F00D0FBE5 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		E873A7B4207EEF2F00D0FBE5 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		E873A7B5207EEF2F00D0FBE5 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		E873A7B7207EEF2F00D0FBE5 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		E873A7B9207EEF4B00D0FBE5 /* YAMOpusCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMOpusCodec.swift; sourceTree = "<group>"; };
+		E873A7BB207EEF8900D0FBE5 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		E8A1FF21207DA8F100B51E6E /* YAMAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMAudioUnit.swift; sourceTree = "<group>"; };
+		E8FD6639207B5B72000B6934 /* YAMAudioRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMAudioRecord.swift; sourceTree = "<group>"; };
+		E8FD663B207B641D000B6934 /* YAMVolCricleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMVolCricleLayer.swift; sourceTree = "<group>"; };
+		F7D820A2E3548C93B8316BD9 /* Pods-YAMAudioDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAMAudioDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAMAudioDemoTests/Pods-YAMAudioDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EF6E7161A3387A223CCEA1 /* Pods_YAMAudioDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YAMAudioDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E86CD748207B45CC00D186D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E873A7B8207EEF2F00D0FBE5 /* libopus.a in Frameworks */,
+				E5EE2198C037182CE2B4DFFD /* Pods_YAMAudioDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86CD75C207B45D500D186D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60199A8531B2EF6FF3D0013 /* Pods_YAMAudioDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86CD767207B45D500D186D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8648287594C7337B9533235 /* Pods_YAMAudioDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5436C7C3B5DFF21B420E2FCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85FCFD25203E8528ECD935AB /* Pods-YAMAudioDemo.debug.xcconfig */,
+				4F484183E220C69C6CB10564 /* Pods-YAMAudioDemo.release.xcconfig */,
+				F7D820A2E3548C93B8316BD9 /* Pods-YAMAudioDemoTests.debug.xcconfig */,
+				442ACEF255EC071904C53961 /* Pods-YAMAudioDemoTests.release.xcconfig */,
+				D7F777440119E91014C664C8 /* Pods-YAMAudioDemoUITests.debug.xcconfig */,
+				4569315BBEEC8DEA5DB6819D /* Pods-YAMAudioDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEC6C98AA11A5B723E4D02F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9525BE209EBA9C1E5F48412F /* Pods_YAMAudioDemo.framework */,
+				F8EF6E7161A3387A223CCEA1 /* Pods_YAMAudioDemoTests.framework */,
+				15B90DD0E96C10ADF476EA99 /* Pods_YAMAudioDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E86CD742207B45CC00D186D6 = {
+			isa = PBXGroup;
+			children = (
+				E86CD74D207B45CC00D186D6 /* YAMAudioDemo */,
+				E86CD762207B45D500D186D6 /* YAMAudioDemoTests */,
+				E86CD76D207B45D500D186D6 /* YAMAudioDemoUITests */,
+				E86CD74C207B45CC00D186D6 /* Products */,
+				5436C7C3B5DFF21B420E2FCD /* Pods */,
+				AEC6C98AA11A5B723E4D02F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E86CD74C207B45CC00D186D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E86CD74B207B45CC00D186D6 /* YAMAudioDemo.app */,
+				E86CD75F207B45D500D186D6 /* YAMAudioDemoTests.xctest */,
+				E86CD76A207B45D500D186D6 /* YAMAudioDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E86CD74D207B45CC00D186D6 /* YAMAudioDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E873A7AF207EEF2F00D0FBE5 /* dependencies */,
+				E86CD77C207B4A2C00D186D6 /* YAMAudio */,
+				E86CD74E207B45CC00D186D6 /* AppDelegate.swift */,
+				E86CD750207B45CC00D186D6 /* ViewController.swift */,
+				E873A7BB207EEF8900D0FBE5 /* header.h */,
+				E86CD752207B45CC00D186D6 /* Main.storyboard */,
+				E86CD755207B45D500D186D6 /* Assets.xcassets */,
+				E86CD757207B45D500D186D6 /* LaunchScreen.storyboard */,
+				E86CD75A207B45D500D186D6 /* Info.plist */,
+			);
+			path = YAMAudioDemo;
+			sourceTree = "<group>";
+		};
+		E86CD762207B45D500D186D6 /* YAMAudioDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E86CD763207B45D500D186D6 /* YAMAudioDemoTests.swift */,
+				E86CD765207B45D500D186D6 /* Info.plist */,
+			);
+			path = YAMAudioDemoTests;
+			sourceTree = "<group>";
+		};
+		E86CD76D207B45D500D186D6 /* YAMAudioDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E86CD76E207B45D500D186D6 /* YAMAudioDemoUITests.swift */,
+				E86CD770207B45D500D186D6 /* Info.plist */,
+			);
+			path = YAMAudioDemoUITests;
+			sourceTree = "<group>";
+		};
+		E86CD77C207B4A2C00D186D6 /* YAMAudio */ = {
+			isa = PBXGroup;
+			children = (
+				E86CD77D207B4A2C00D186D6 /* Recorder.swift */,
+				E86CD77E207B4A2C00D186D6 /* YAMOpenALPlay.swift */,
+				E8FD6639207B5B72000B6934 /* YAMAudioRecord.swift */,
+				E8FD663B207B641D000B6934 /* YAMVolCricleLayer.swift */,
+				E8A1FF21207DA8F100B51E6E /* YAMAudioUnit.swift */,
+				E834D9B2207DE59F00030202 /* AudioController.swift */,
+				E873A7B9207EEF4B00D0FBE5 /* YAMOpusCodec.swift */,
+			);
+			path = YAMAudio;
+			sourceTree = SOURCE_ROOT;
+		};
+		E873A7AF207EEF2F00D0FBE5 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				E873A7B0207EEF2F00D0FBE5 /* include */,
+				E873A7B6207EEF2F00D0FBE5 /* lib */,
+			);
+			path = dependencies;
+			sourceTree = "<group>";
+		};
+		E873A7B0207EEF2F00D0FBE5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E873A7B1207EEF2F00D0FBE5 /* opus */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E873A7B1207EEF2F00D0FBE5 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				E873A7B2207EEF2F00D0FBE5 /* opus.h */,
+				E873A7B3207EEF2F00D0FBE5 /* opus_defines.h */,
+				E873A7B4207EEF2F00D0FBE5 /* opus_multistream.h */,
+				E873A7B5207EEF2F00D0FBE5 /* opus_types.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		E873A7B6207EEF2F00D0FBE5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E873A7B7207EEF2F00D0FBE5 /* libopus.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E86CD74A207B45CC00D186D6 /* YAMAudioDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86CD773207B45D500D186D6 /* Build configuration list for PBXNativeTarget "YAMAudioDemo" */;
+			buildPhases = (
+				A9DD0F941C44330FEE9EAA59 /* [CP] Check Pods Manifest.lock */,
+				E86CD747207B45CC00D186D6 /* Sources */,
+				E86CD748207B45CC00D186D6 /* Frameworks */,
+				E86CD749207B45CC00D186D6 /* Resources */,
+				CE424B951ABB156D31C1B819 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YAMAudioDemo;
+			productName = YAMAudioDemo;
+			productReference = E86CD74B207B45CC00D186D6 /* YAMAudioDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E86CD75E207B45D500D186D6 /* YAMAudioDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86CD776207B45D500D186D6 /* Build configuration list for PBXNativeTarget "YAMAudioDemoTests" */;
+			buildPhases = (
+				1E464B2647413888B8D6B132 /* [CP] Check Pods Manifest.lock */,
+				E86CD75B207B45D500D186D6 /* Sources */,
+				E86CD75C207B45D500D186D6 /* Frameworks */,
+				E86CD75D207B45D500D186D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E86CD761207B45D500D186D6 /* PBXTargetDependency */,
+			);
+			name = YAMAudioDemoTests;
+			productName = YAMAudioDemoTests;
+			productReference = E86CD75F207B45D500D186D6 /* YAMAudioDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E86CD769207B45D500D186D6 /* YAMAudioDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86CD779207B45D500D186D6 /* Build configuration list for PBXNativeTarget "YAMAudioDemoUITests" */;
+			buildPhases = (
+				CFFEAFE1C2F23AC5D3956A03 /* [CP] Check Pods Manifest.lock */,
+				E86CD766207B45D500D186D6 /* Sources */,
+				E86CD767207B45D500D186D6 /* Frameworks */,
+				E86CD768207B45D500D186D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E86CD76C207B45D500D186D6 /* PBXTargetDependency */,
+			);
+			name = YAMAudioDemoUITests;
+			productName = YAMAudioDemoUITests;
+			productReference = E86CD76A207B45D500D186D6 /* YAMAudioDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E86CD743207B45CC00D186D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "杨清晖";
+				TargetAttributes = {
+					E86CD74A207B45CC00D186D6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					E86CD75E207B45D500D186D6 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E86CD74A207B45CC00D186D6;
+					};
+					E86CD769207B45D500D186D6 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E86CD74A207B45CC00D186D6;
+					};
+				};
+			};
+			buildConfigurationList = E86CD746207B45CC00D186D6 /* Build configuration list for PBXProject "YAMAudioDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E86CD742207B45CC00D186D6;
+			productRefGroup = E86CD74C207B45CC00D186D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E86CD74A207B45CC00D186D6 /* YAMAudioDemo */,
+				E86CD75E207B45D500D186D6 /* YAMAudioDemoTests */,
+				E86CD769207B45D500D186D6 /* YAMAudioDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E86CD749207B45CC00D186D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86CD759207B45D500D186D6 /* LaunchScreen.storyboard in Resources */,
+				E86CD756207B45D500D186D6 /* Assets.xcassets in Resources */,
+				E86CD754207B45CC00D186D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86CD75D207B45D500D186D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86CD768207B45D500D186D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E464B2647413888B8D6B132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YAMAudioDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DD0F941C44330FEE9EAA59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YAMAudioDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE424B951ABB156D31C1B819 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YAMAudioDemo/Pods-YAMAudioDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YAMAudioDemo/Pods-YAMAudioDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFFEAFE1C2F23AC5D3956A03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YAMAudioDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E86CD747207B45CC00D186D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FD663A207B5B72000B6934 /* YAMAudioRecord.swift in Sources */,
+				E873A7BA207EEF4B00D0FBE5 /* YAMOpusCodec.swift in Sources */,
+				E8FD663C207B641D000B6934 /* YAMVolCricleLayer.swift in Sources */,
+				E86CD77F207B4A2C00D186D6 /* Recorder.swift in Sources */,
+				E8A1FF22207DA8F100B51E6E /* YAMAudioUnit.swift in Sources */,
+				E86CD751207B45CC00D186D6 /* ViewController.swift in Sources */,
+				E86CD780207B4A2C00D186D6 /* YAMOpenALPlay.swift in Sources */,
+				E834D9B3207DE59F00030202 /* AudioController.swift in Sources */,
+				E86CD74F207B45CC00D186D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86CD75B207B45D500D186D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86CD764207B45D500D186D6 /* YAMAudioDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86CD766207B45D500D186D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86CD76F207B45D500D186D6 /* YAMAudioDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E86CD761207B45D500D186D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E86CD74A207B45CC00D186D6 /* YAMAudioDemo */;
+			targetProxy = E86CD760207B45D500D186D6 /* PBXContainerItemProxy */;
+		};
+		E86CD76C207B45D500D186D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E86CD74A207B45CC00D186D6 /* YAMAudioDemo */;
+			targetProxy = E86CD76B207B45D500D186D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E86CD752207B45CC00D186D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86CD753207B45CC00D186D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E86CD757207B45D500D186D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86CD758207B45D500D186D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E86CD771207B45D500D186D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E86CD772207B45D500D186D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E86CD774207B45D500D186D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FCFD25203E8528ECD935AB /* Pods-YAMAudioDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYNG6APY5Q;
+				INFOPLIST_FILE = YAMAudioDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YAMAudioDemo/dependencies/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdlm.YAMAudioDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/yangqinghui/Documents/YAM/YAMAudioDemo/YAMAudioDemo/header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E86CD775207B45D500D186D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F484183E220C69C6CB10564 /* Pods-YAMAudioDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYNG6APY5Q;
+				INFOPLIST_FILE = YAMAudioDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YAMAudioDemo/dependencies/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdlm.YAMAudioDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/yangqinghui/Documents/YAM/YAMAudioDemo/YAMAudioDemo/header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E86CD777207B45D500D186D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D820A2E3548C93B8316BD9 /* Pods-YAMAudioDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYNG6APY5Q;
+				INFOPLIST_FILE = YAMAudioDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdlm.YAMAudioDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YAMAudioDemo.app/YAMAudioDemo";
+			};
+			name = Debug;
+		};
+		E86CD778207B45D500D186D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442ACEF255EC071904C53961 /* Pods-YAMAudioDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYNG6APY5Q;
+				INFOPLIST_FILE = YAMAudioDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdlm.YAMAudioDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YAMAudioDemo.app/YAMAudioDemo";
+			};
+			name = Release;
+		};
+		E86CD77A207B45D500D186D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F777440119E91014C664C8 /* Pods-YAMAudioDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYNG6APY5Q;
+				INFOPLIST_FILE = YAMAudioDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdlm.YAMAudioDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YAMAudioDemo;
+			};
+			name = Debug;
+		};
+		E86CD77B207B45D500D186D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4569315BBEEC8DEA5DB6819D /* Pods-YAMAudioDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYNG6APY5Q;
+				INFOPLIST_FILE = YAMAudioDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdlm.YAMAudioDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YAMAudioDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E86CD746207B45CC00D186D6 /* Build configuration list for PBXProject "YAMAudioDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86CD771207B45D500D186D6 /* Debug */,
+				E86CD772207B45D500D186D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86CD773207B45D500D186D6 /* Build configuration list for PBXNativeTarget "YAMAudioDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86CD774207B45D500D186D6 /* Debug */,
+				E86CD775207B45D500D186D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86CD776207B45D500D186D6 /* Build configuration list for PBXNativeTarget "YAMAudioDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86CD777207B45D500D186D6 /* Debug */,
+				E86CD778207B45D500D186D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86CD779207B45D500D186D6 /* Build configuration list for PBXNativeTarget "YAMAudioDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86CD77A207B45D500D186D6 /* Debug */,
+				E86CD77B207B45D500D186D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E86CD743207B45CC00D186D6 /* Project object */;
+}
